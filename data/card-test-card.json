@@ -1,0 +1,9 @@
+{
+  "type": "weather",
+  "config": {
+    "apiUrl": "https://api.weather.com",
+    "refreshInterval": 30000
+  },
+  "id": "test-card",
+  "updatedAt": "2025-08-30T00:51:15.884Z"
+}
