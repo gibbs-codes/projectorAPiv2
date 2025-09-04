@@ -139,7 +139,7 @@ function handleAsync(fn) {
 
 function transformProfileForUI(profile) {
   const gridConfig = {
-    columns: "320px 1fr 280px",
+    columns: "400px 1fr 400px",
     rows: "1fr",
     areas: [["left", "center", "right"]]
   };
@@ -188,7 +188,7 @@ function getDefaultProfileForUI() {
     id: "default-profile",
     name: "Default Dashboard",
     gridConfig: {
-      columns: "320px 1fr 280px",
+      columns: "400px 1fr 400px",
       rows: "1fr",
       areas: [["left", "center", "right"]]
     },
