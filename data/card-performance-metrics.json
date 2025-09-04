@@ -1,0 +1,44 @@
+{
+  "type": "metric",
+  "config": {
+    "title": "Performance Metrics",
+    "metrics": [
+      {
+        "label": "Response Time",
+        "value": "125ms",
+        "trend": "down",
+        "change": "-15%",
+        "color": "green",
+        "icon": "⚡"
+      },
+      {
+        "label": "Uptime",
+        "value": "99.9%",
+        "trend": "stable",
+        "change": "0%",
+        "color": "blue",
+        "icon": "🔄"
+      },
+      {
+        "label": "Active Users",
+        "value": "1,234",
+        "trend": "up",
+        "change": "+8%",
+        "color": "green",
+        "icon": "👤"
+      },
+      {
+        "label": "Memory Usage",
+        "value": "68%",
+        "trend": "up",
+        "change": "+3%",
+        "color": "orange",
+        "icon": "💾"
+      }
+    ],
+    "backgroundColor": "#fff3cd",
+    "refreshInterval": 60000
+  },
+  "id": "performance-metrics",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}

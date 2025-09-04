@@ -1,0 +1,12 @@
+{
+  "type": "text",
+  "config": {
+    "title": "Welcome to Projector",
+    "content": "This is your personalized dashboard. You can add, remove, and customize cards to display the information that matters most to you. Each zone can contain multiple cards with different data sources and visualizations.",
+    "backgroundColor": "#f8f9fa",
+    "textColor": "#333333",
+    "fontSize": "14px"
+  },
+  "id": "welcome-text",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}

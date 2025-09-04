@@ -137,19 +137,36 @@ function handleAsync(fn) {
   };
 }
 
-function transformProfileForUI(profile) {
+async function transformProfileForUI(profile) {
   const gridConfig = {
     columns: "400px 1fr 400px",
     rows: "1fr",
     areas: [["left", "center", "right"]]
   };
 
-  const zones = Object.entries(profile.zones).map(([zoneId, zoneData]) => ({
-    id: zoneId,
-    name: zoneId.charAt(0).toUpperCase() + zoneId.slice(1) + " Zone",
-    gridArea: zoneId,
-    cards: zoneData.cards || []
-  }));
+  const zones = await Promise.all(
+    Object.entries(profile.zones).map(async ([zoneId, zoneData]) => {
+      const cardIds = zoneData.cards || [];
+      const cards = await Promise.all(
+        cardIds.map(async (cardId) => {
+          try {
+            const card = await fileStorage.readFile(`card-${cardId}.json`, null);
+            return card;
+          } catch (error) {
+            logger.warn(`Failed to load card ${cardId}:`, error);
+            return null;
+          }
+        })
+      );
+
+      return {
+        id: zoneId,
+        name: zoneId.charAt(0).toUpperCase() + zoneId.slice(1) + " Zone",
+        gridArea: zoneId,
+        cards: cards.filter(card => card !== null)
+      };
+    })
+  );
 
   return {
     id: profile.id,
@@ -349,7 +366,7 @@ app.get('/api/profile/active', handleAsync(async (req, res) => {
       logger.warn('Active profile not found, using default profile', { profileId: active.profileId });
       baseProfile = getDefaultProfileForUI();
     } else {
-      baseProfile = transformProfileForUI(profile);
+      baseProfile = await transformProfileForUI(profile);
     }
   }
   

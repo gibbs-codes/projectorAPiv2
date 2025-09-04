@@ -1,0 +1,13 @@
+{
+  "type": "text",
+  "config": {
+    "title": "Recent Activity",
+    "content": "📊 Analytics dashboard updated\\n🔄 Data sync completed\\n✅ 3 new cards added to profile\\n🎨 UI theme customized\\n📧 Email notifications configured\\n⚙️ API integration tested\\n🔍 Performance monitoring enabled",
+    "backgroundColor": "#e8f5e8",
+    "textColor": "#2d5a2d",
+    "fontSize": "13px",
+    "lineHeight": "1.6"
+  },
+  "id": "recent-activity",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}

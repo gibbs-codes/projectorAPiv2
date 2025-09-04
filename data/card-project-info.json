@@ -1,0 +1,40 @@
+{
+  "type": "info",
+  "config": {
+    "title": "Project Dashboard",
+    "subtitle": "Current Sprint Overview",
+    "content": "Track your project progress and key metrics",
+    "items": [
+      {
+        "icon": "✅",
+        "text": "12 tasks completed this week",
+        "color": "green"
+      },
+      {
+        "icon": "⏳",
+        "text": "5 tasks in progress",
+        "color": "orange"
+      },
+      {
+        "icon": "🎯",
+        "text": "Sprint goal: 85% complete",
+        "color": "blue"
+      },
+      {
+        "icon": "📅",
+        "text": "3 days remaining in sprint",
+        "color": "red"
+      },
+      {
+        "icon": "👥",
+        "text": "4 team members active",
+        "color": "purple"
+      }
+    ],
+    "backgroundColor": "#f0f8f0",
+    "borderColor": "#28a745",
+    "refreshInterval": 600000
+  },
+  "id": "project-info",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}

@@ -1,0 +1,38 @@
+{
+  "type": "chart",
+  "config": {
+    "title": "Dashboard Analytics",
+    "chartType": "line",
+    "data": {
+      "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "datasets": [
+        {
+          "label": "Page Views",
+          "data": [120, 190, 300, 250, 200, 150, 400],
+          "borderColor": "#007bff",
+          "backgroundColor": "rgba(0, 123, 255, 0.1)"
+        },
+        {
+          "label": "API Calls",
+          "data": [80, 150, 200, 180, 160, 100, 300],
+          "borderColor": "#28a745",
+          "backgroundColor": "rgba(40, 167, 69, 0.1)"
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "scales": {
+        "y": {
+          "beginAtZero": true
+        }
+      }
+    },
+    "height": 200,
+    "backgroundColor": "#ffffff",
+    "refreshInterval": 300000
+  },
+  "id": "analytics-chart",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "status",
+  "config": {
+    "title": "System Status",
+    "items": [
+      {
+        "label": "API Server",
+        "status": "online",
+        "color": "green",
+        "lastCheck": "2025-09-04T16:14:30.000Z"
+      },
+      {
+        "label": "CTAAPI Service",
+        "status": "connected",
+        "color": "green",
+        "lastCheck": "2025-09-04T16:14:25.000Z"
+      },
+      {
+        "label": "Database",
+        "status": "healthy",
+        "color": "blue",
+        "lastCheck": "2025-09-04T16:14:20.000Z"
+      },
+      {
+        "label": "Cache",
+        "status": "active",
+        "color": "orange",
+        "lastCheck": "2025-09-04T16:14:15.000Z"
+      }
+    ],
+    "refreshInterval": 30000,
+    "backgroundColor": "#e3f2fd"
+  },
+  "id": "system-status",
+  "updatedAt": "2025-09-04T16:15:00.000Z"
+}
